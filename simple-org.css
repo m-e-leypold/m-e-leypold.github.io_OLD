@@ -1,0 +1,133 @@
+/* NOTE: This is an experimental CSS for manuals produced from org-mode: It has been
+   ripped from 'regenbogen-handbuch' and is far from complete.
+ */
+
+body{
+    background-color:#F8F8F8;
+    margin: 2em; 
+}
+
+#logo-image {
+    float:left;
+}
+
+#content  { 
+    margin-left:6em; 
+    margin-right:8em; 
+    font-family:sans-serif; 
+}
+
+#table-of-contents {
+    padding: 2ex;
+    border: solid silver 2px;
+    background-color:#F0F0F0;
+    clear:both;
+    margin-bottom:2em;
+}
+
+h1,h2,h3,h4,h5,h6,h7 {
+    color:darkblue;
+}
+
+h1 { font-size:200%; }
+.title { padding-top: 3em; text-align: left; }
+#logo-image {
+    float: left;
+    margin-bottom:  3ex;
+    padding-bottom: 1em;
+    padding-right: 0em;
+    margin-right: -60px;
+}
+
+
+
+#table-of-contents { margin-top: 2em; }
+
+h2 { font-size:141%; margin-left: 0cm; }
+h3 { font-size:100%; }
+
+h4 { font-size:100%;  
+     display:inline; 
+     padding-right:2em; 
+   }
+.outline-text-4 p { display: inline; }
+.outline-text-4 { display: inline; }
+.outline-4 { display: block; margin-bottom: 2ex; margin-top:2ex; }
+
+/* H5 and less is pretty academic anyway: (1) hard to design a pretty layout with this many
+   levels. (2) Default org-export will export 4th-level headings NOT to H5 but to
+   enumerations.
+
+   The layout could perhaps be improved (and carry more levels) by using the horizonal position (indent) of the
+   heading as stylistic element. I've not tried it yet.
+*/
+
+h5 { font-size:100%;  
+     display:inline; 
+     padding-right:2em; 
+     padding-left:1em; 
+     color: black; 
+     font-style:italic; 
+     font-weight:bold; 
+   }
+.outline-text-5 p { display: inline; }
+.outline-text-5 { display: inline; }
+.outline-5 { display: block; margin-bottom: 2ex; margin-top:2ex; }
+
+/* These are here purely for reducing confusion, not because they would look nice. */
+
+
+h6 { font-size:90%;  
+     display:inline; 
+     padding-right:2em; 
+     padding-left:1em; 
+     color: black; 
+     font-style:italic; 
+     font-weight:normal; 
+   }
+.outline-text-6 p { display: inline; }
+.outline-text-6 { display: inline; }
+.outline-6 { display: block; margin-bottom: 2ex; margin-top:2ex; }
+
+
+h7 { font-size:80%;  
+     display:inline; 
+     padding-right:2em; 
+     padding-left:1em; 
+     color: black; 
+     font-style:italic; 
+     font-weight:normal; 
+   }
+.outline-text-7 p { display: inline; }
+.outline-text-7 { display: inline; }
+.outline-7 { display: block; margin-bottom: 2ex; margin-top:2ex; }
+
+#postamble   { color:lightgrey; font-size:80%; margin-top: 3em; padding-bottom: 1em; border-top: solid silver 1px; clear:both; }
+/* #postamble p { display:inline;  } *//* instead of visible footer */
+
+#postamble p { margin:0px; padding:0px; margin-top:0.5ex; }
+#postamble .author    { color: black; float:left;  }
+#postamble .date      { color: black; float:right; }
+#postamble .creator   { clear:both; }
+
+/* --------------- */
+
+.timestamp { color: #808080; font-weight: bold; padding-right: 0.1em; font-size: 95%; }
+
+/* --------------- */
+
+.figure { float:right; 
+	  background-color:#E8E8E8; 
+	  padding-right:2em; 
+	  padding-left:2em; 
+	  padding-top:1em; 
+	  margin-bottom:1em; 
+	  clear:both; 
+	  margin-left:1em;
+	  /* margin-right:-7em; */
+}
+.figure.nocaption { padding-bottom:1em;} /* Adjust for missing caption */
+.figure img { margin:0px; padding:0px; margin-bottom:1em; border-style:none; }
+.figure p   { margin:0px; padding:0px; font-size:80%; padding-bottom:1em; }
+
+.clearboth { clear:both; }
